@@ -1,0 +1,14 @@
+{
+  "name": "What's Next!",
+  "description": "Manage your weekly events and special events and choose which to join.",
+  "launch_path": "/",
+  "icons": {
+    "16": "/img/icons.ico",
+    "359": "/img/icons/icon.png"
+  },
+  "developer": {
+    "name": "Lau Wei Lim",
+    "url": "https://github.com/dopt/whatsnext"
+  },
+  "appcache_path": "/whatsnext.appcache"
+}
