@@ -1,4 +1,5 @@
-[
-	["1, 1, New Year"],
-	["1, 4, April Fool"]
-]
+var special_dates = [
+{ "date":"1/1" , "eventName":"New Year" }, 
+{ "date":"1/4" , "eventName":"April Fool" }, 
+{ "date":"1/5" , "eventName": "Labour Day" }
+];
