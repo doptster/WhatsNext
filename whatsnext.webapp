@@ -3,8 +3,8 @@
   "description": "Manage your weekly events and special events and choose which to join.",
   "launch_path": "/",
   "icons": {
-    "16": "/img/icons.ico",
-    "359": "/img/icons/icon.png"
+    "16": "/image/icons.ico",
+    "359": "/image/icons/icon.png"
   },
   "developer": {
     "name": "Lau Wei Lim",
