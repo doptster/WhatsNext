@@ -1,13 +1,17 @@
 {
-  "name": "Whats Next!",
-  "description": "Manage your weekly events and special events and choose which to join.",
-  "launch_path": "/",
-  "icons": {
-    "16": "/image/icons.ico",
-    "359": "/image/icons/icon.png"
+  "name":"Whats Next",
+  "description":"Manage your weekly events and special events and choose which to join",
+  "version":"1.0",
+  "icons":{
+    "16":"/image/icons.ico",
+    "48":"/image/icons/icon.png",
+    "128":"/image/icons/icon.png"
   },
-  "developer": {
-    "name": "Lau Wei Lim",
-    "url": "https://github.com/dopt/whatsnext"
+  "installs_allowed_from":[
+    "*"
+  ],
+  "developer":{
+    "name":"Lau Wei Lim",
+    "url":"https://github.com/dopt/whatsnext"
   }
 }
