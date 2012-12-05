@@ -1,1 +1,29 @@
-My Github pages
+<!doctype html>
+<html manifest="whatsnext.appcache">
+<head>
+  <title>What's Next</title>
+	<script src="whatsnext.js"></script>
+	<link rel="stylesheet" type="text/css" href="whatsnext.css">
+</head>
+<body onload="init();">
+
+	<div id="main_area" class="non_trans">
+
+		<h1>What's Next</h1><img src='image/icon.png' alt='whats next icon'>
+		<span id="clock"></span>
+		<span id="next_special"><span style='padding-left:5px;'>Next Special Event </span><div id='next_special_content'></div></span>
+		<span id="next_clock"><span id='next_clock_inner' style='padding-left:5px;'></span></span>
+		<a href="javascript:add_event();"><span id="plus_button" class="button"><span style='padding-left:5px;'>New Event</span><div class='sign_button'>+</div></span></a>
+		<span id="next_info" class=""><span style='padding-left:5px;'>Next Event</span><div id='next_content'></div></span>
+		<span id="current_info" class=""><span style='padding-left:5px;'>Current Event</span><div id='current_content'></div></span>
+		<a href="javascript:cancel_event();"><span id="minus_button" class="button"><span style='padding-left:5px;'>Cancel Event</span><div class='sign_button'>-</div></span></a>
+		<span id="events_table"><div style='padding-left:5px;'>Upcoming Special Event(s) </div><span id='events_content'></span></span>
+		<span id="w_events_table"><div style='padding-left:5px;'>Weekly Event(s) </div><span id='w_events_content'></span></span>
+		<div id="time_table"></div>
+	
+	</div>
+	
+	<span id='add_event' class="full_trans"></span>
+	<span id='cancel_event' class="full_trans"></span>
+</body>
+</html>
