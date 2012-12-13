@@ -2,6 +2,7 @@
   "name":"Whats Next",
   "description":"Manage your weekly events and special events and choose which to join",
   "version":"1.0",
+  "launch_path": "/",
   "icons":{
     "16":"/image/icon-16.ico",
     "48":"/image/icon-48.ico",
