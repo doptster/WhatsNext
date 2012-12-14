@@ -4,10 +4,10 @@
   "version":"1.0",
   "launch_path": "/",
   "icons":{
-    "16":"/image/icon-16.png",
-    "48":"/image/icon-48.png",
-    "52":"/image/icon-52.png",
-    "128":"/image/icon-128.png"
+    "16":"http://dopt.github.com/WhatsNext/image/icon-16.png",
+    "48":"http://dopt.github.com/WhatsNext/image/icon-48.png",
+    "52":"http://dopt.github.com/WhatsNext/image/icon-52.png",
+    "128":"http://dopt.github.com/WhatsNext/image/icon-128.png"
   },
   "installs_allowed_from":[
     "*"
