@@ -2,7 +2,7 @@
   "name":"Whats Next",
   "description":"Manage your weekly events and special events and choose which to join",
   "version":"1.0",
-  "launch_path": "/",
+  "launch_path": "http://dopt.github.com/WhatsNext/index.html",
   "icons":{
     "16":"http://dopt.github.com/WhatsNext/image/icon-16.png",
     "48":"http://dopt.github.com/WhatsNext/image/icon-48.png",
