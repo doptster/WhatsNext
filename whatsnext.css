@@ -209,10 +209,10 @@ h1{
 	font-size:3em;
 }
 #add_event{
-	background:linear-gradient(90deg, lightBlue, purple);
-	background:-webkit-linear-gradient(90deg, #CC66FF, purple);
-	background:–moz-linear-gradient(90deg, #CC66FF, purple);
-	background:–o-linear-gradient(90deg, lightBlue, purple);
+	background:linear-gradient(90deg, #CC00FF, purple);
+	background:-webkit-linear-gradient(90deg, #CC00FF, purple);
+	background:ï¿½moz-linear-gradient(90deg, #CC00FF purple);
+	background:ï¿½o-linear-gradient(90deg, #CC00FF, purple);
 	position:absolute;
 	top:30%;
 	left:30%;
@@ -222,10 +222,10 @@ h1{
 	padding:5px;
 }
 #cancel_event{
-	background:linear-gradient(90deg, lightBlue, purple);
-	background:-webkit-linear-gradient(90deg, #CC66FF, purple);
-	background:–moz-linear-gradient(90deg, #CC66FF, purple);
-	background:–o-linear-gradient(90deg, lightBlue, purple);
+	background:linear-gradient(90deg, #CC00FF, purple);
+	background:-webkit-linear-gradient(90deg, #CC00FF, purple);
+	background:ï¿½moz-linear-gradient(90deg, #CC00FF purple);
+	background:ï¿½o-linear-gradient(90deg, #CC00FF purple);
 	position:absolute;
 	top:30%;
 	left:30%;
@@ -238,8 +238,8 @@ h1{
 #info_event{
 	background:linear-gradient(90deg, lightBlue, blue);
 	background:-webkit-linear-gradient(90deg, lightBlue, blue);
-	background:–moz-linear-gradient(90deg, lightBlue, blue);
-	background:–o-linear-gradient(90deg, lightBlue, blue);
+	background:ï¿½moz-linear-gradient(90deg, lightBlue, blue);
+	background:ï¿½o-linear-gradient(90deg, lightBlue, blue);
 	color:white;
 	position:absolute;
 	top:30%;
@@ -267,15 +267,15 @@ h1{
 .form_button{
 	background:linear-gradient(90deg, lightBlue, blue);
 	background:-webkit-linear-gradient(90deg, lightBlue, blue);
-	background:–moz-linear-gradient(90deg, lightBlue, blue);
-	background:–o-linear-gradient(90deg, lightBlue, blue);
+	background:ï¿½moz-linear-gradient(90deg, lightBlue, blue);
+	background:ï¿½o-linear-gradient(90deg, lightBlue, blue);
 	color:white;
 }
 .form_button:hover{
 	background:linear-gradient(90deg, red, #CC0000);
 	background:-webkit-linear-gradient(90deg, red, #CC0000);
-	background:–moz-linear-gradient(90deg, red, #CC0000);
-	background:–o-linear-gradient(90deg, red, #CC0000);
+	background:ï¿½moz-linear-gradient(90deg, red, #CC0000);
+	background:ï¿½o-linear-gradient(90deg, red, #CC0000);
 }
 #next_special_content{
 	text-align:center;
