@@ -379,7 +379,7 @@ function create_time_table(){
 			}
 			
 			if(name.length > 10) style += "font-size:0.5em;";
-			new_span += "<button class='normal_block' style='"+style+"'>"+name+"</button>";
+			new_span += "<button id='"+i+","+j+","+name+"' class='normal_block' onclick='date_info(this.id);' style='"+style+"'>"+name+"</button>";
 		}new_span += "<br/>";
 	}
 	document.getElementById("time_table").innerHTML = tt_span + new_span;
@@ -771,6 +771,7 @@ function create_event(){
 function close_window(){
 	document.getElementById("add_event").className = "full_trans";
 	document.getElementById("cancel_event").className = "full_trans";
+	document.getElementById("info_event").className = "full_trans";
 	document.getElementById("main_area").className = "non_trans";
 	
 	/*initialize again, used this to refresh, something like repaint*/
@@ -846,4 +847,120 @@ function concurrent_event_time(x){
 		}
 	}
 	return false;//no concurrent
+}
+
+function date_info(id){
+	document.getElementById("info_event").className = "non_trans";
+	document.getElementById("main_area").className = "half_trans";
+	var i = id.substr(0, id.indexOf(","));
+	i = i_get_time(i);
+	id = id.substr(id.indexOf(",")+1);
+	var j = id.substr(0, id.indexOf(","));
+	var day = j_get_day(j);
+	var date = j_get_date(j);
+	var name = id.substr(id.indexOf(",")+1);
+	var s_name = s_event_name(date);
+	var new_content = "";
+	new_content += "<h3>Today's special</h3>";
+	new_content += "Time : "+ i + "<br/>";
+	new_content += "Day : "+ day + "<br/>";
+	new_content += "Date : "+ date + "<br/>";
+	new_content += "Weekly event<br/>";
+	new_content += "<b><span style='color:black; font-size:1.5em;'>" + name + "</span></b><br/>";
+	new_content += "Special event<br/>";
+	new_content += "<b><span style='color:black; font-size:1.5em;'>" + s_name + "</span></b><br/>";
+	new_content += "<br/>";
+	new_content += "<button class='form_button' onclick='close_window();'>Ok</button>";
+	document.getElementById("info_event").innerHTML = new_content;
+	
+	/*initialize again, used this to refresh, something like repaint*/
+	document.getElementById("main_area").innerHTML = document.getElementById("main_area").innerHTML;
+}
+function i_get_time(i){
+	var name = "";
+	if(i == 0)name = "12-1am";
+	else if(i == 1)name = "1-2am";
+	else if(i == 2)name = "2-3am";
+	else if(i == 3)name = "3-4am";
+	else if(i == 4)name = "4-5am";
+	else if(i == 5)name = "5-6am";
+	else if(i == 6)name = "6-7am";
+	else if(i == 7)name = "7-8am";
+	else if(i == 8)name = "8-9am";
+	else if(i == 9)name = "9-10am";
+	else if(i == 10)name = "10-11pm";
+	else if(i == 11)name = "11-12pm";
+	else if(i == 12)name = "12-1pm";
+	else if(i == 13)name = "1-2pm";
+	else if(i == 14)name = "2-3pm";
+	else if(i == 15)name = "3-4pm";
+	else if(i == 16)name = "4-5pm";
+	else if(i == 17)name = "5-6pm";
+	else if(i == 18)name = "6-7pm";
+	else if(i == 19)name = "7-8pm";
+	else if(i == 20)name = "8-9pm";
+	else if(i == 21)name = "9-10pm";
+	else if(i == 22)name = "10-11pm";
+	else if(i == 23)name = "11-12pm";
+	return name;
+}
+function j_get_day(j){
+	var name = "";
+	if(j == 1)name = "Monday";
+	else if(j == 2)name = "Tuesday";
+	else if(j == 3)name = "Wednesday";
+	else if(j == 4)name = "Thursday";
+	else if(j == 5)name = "Friday";
+	else if(j == 6)name = "Saturday";
+	else if(j == 7)name = "Sunday";
+	return name;
+}
+function j_get_date(j){
+	var name = "";
+
+	var today = new Date();
+	var year = today.getFullYear();
+	var month = today.getMonth() + 1;
+	var date = today.getDate();
+	var day = today.getDay();
+	var milli = today.getTime();
+	
+	if(day == 0)day = 7;
+		
+	if(day == j){//it's today
+		name += "("+date+"/"+month+")";
+	} else if(j != 0){
+		//display date before today
+		if(j < day){
+			var that_day = new Date(milli - (day - j) * 86400000);
+			var that_month = that_day.getMonth()+1;
+			
+			name += "("+that_day.getDate()+"/"+that_month+")";
+		} else {
+			var that_day = new Date(milli + (j - day) * 86400000);
+			var that_month = that_day.getMonth()+1;
+
+			name += "("+that_day.getDate()+"/"+that_month+")";
+		}
+	}
+	return name;
+}
+
+function s_event_name(date){
+	var name = "";
+	date = date.substr(1, date.length-2);
+	var the_date = date.substr(0, date.indexOf("/"));
+	var the_month = date.substr(date.indexOf("/") +1);
+	for(i = 0; i < events.length; i++){
+		var split = events[i].split("%");
+		if(split[0] == "w")
+			continue;
+		var date_split = split[1].split("/");
+		var time_split = split[2];
+		if(Number(the_date) == Number(date_split[0]) && Number(the_month) == Number(date_split[1])){
+			name += split[3] + "("+time_split+")<br/>";
+		}
+	}
+	if(name == "")return "-";
+	return name;
 }

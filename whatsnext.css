@@ -209,7 +209,10 @@ h1{
 	font-size:3em;
 }
 #add_event{
-	background-color:purple;
+	background:linear-gradient(90deg, lightBlue, purple);
+	background:-webkit-linear-gradient(90deg, #CC66FF, purple);
+	background:–moz-linear-gradient(90deg, #CC66FF, purple);
+	background:–o-linear-gradient(90deg, lightBlue, purple);
 	position:absolute;
 	top:30%;
 	left:30%;
@@ -219,7 +222,10 @@ h1{
 	padding:5px;
 }
 #cancel_event{
-	background-color:purple;
+	background:linear-gradient(90deg, lightBlue, purple);
+	background:-webkit-linear-gradient(90deg, #CC66FF, purple);
+	background:–moz-linear-gradient(90deg, #CC66FF, purple);
+	background:–o-linear-gradient(90deg, lightBlue, purple);
 	position:absolute;
 	top:30%;
 	left:30%;
@@ -228,6 +234,22 @@ h1{
 	color:white;
 	padding:5px;
 	overflow:auto;
+}
+#info_event{
+	background:linear-gradient(90deg, lightBlue, blue);
+	background:-webkit-linear-gradient(90deg, lightBlue, blue);
+	background:–moz-linear-gradient(90deg, lightBlue, blue);
+	background:–o-linear-gradient(90deg, lightBlue, blue);
+	color:white;
+	position:absolute;
+	top:30%;
+	left:30%;
+	width:440px;
+	height:330px;
+	color:white;
+	padding:5px;
+	overflow:auto;
+	text-align:center;
 }
 .non_trains{
 	opacity:1.0;
