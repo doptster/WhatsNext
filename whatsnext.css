@@ -211,8 +211,8 @@ h1{
 #add_event{
 	background:linear-gradient(90deg, #CC00FF, purple);
 	background:-webkit-linear-gradient(90deg, #CC00FF, purple);
-	background:�moz-linear-gradient(90deg, #CC00FF purple);
-	background:�o-linear-gradient(90deg, #CC00FF, purple);
+	background:-moz-linear-gradient(90deg, #CC00FF purple);
+	background:-linear-gradient(90deg, #CC00FF, purple);
 	position:absolute;
 	top:30%;
 	left:30%;
@@ -224,8 +224,8 @@ h1{
 #cancel_event{
 	background:linear-gradient(90deg, #CC00FF, purple);
 	background:-webkit-linear-gradient(90deg, #CC00FF, purple);
-	background:�moz-linear-gradient(90deg, #CC00FF purple);
-	background:�o-linear-gradient(90deg, #CC00FF purple);
+	background:-moz-linear-gradient(90deg, #CC00FF purple);
+	background:-o-linear-gradient(90deg, #CC00FF purple);
 	position:absolute;
 	top:30%;
 	left:30%;
