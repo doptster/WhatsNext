@@ -301,3 +301,33 @@ th{
 td{
 	background-color:black;
 }
+@media screen and (max-width:1200px){
+	#clock{
+		width:100px;
+		height:100px;
+	}
+	#plus_button{
+		width:90px;
+		height:90px;
+	}
+	#minus_button{
+		width:90px;
+		height:90px;
+	}
+	#current_info{
+		width:130px;
+		height:90px;
+	}
+	#next_info{
+		width:90px;
+		height:90px;
+	}
+	#next_clock{
+		width:100px;
+		height:100px;
+	}
+	#next_special{
+		width:130px;
+		height:120px;
+	}
+}
